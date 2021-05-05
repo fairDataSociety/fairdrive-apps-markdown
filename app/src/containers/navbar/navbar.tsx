@@ -10,7 +10,7 @@ import {
   LoginComponent,
   ListFilesComponent,
   LoadFilesComponent,
-} from "fairdrive-connect";
+} from "fairdrive-protocol";
 export interface Props {
   file: any;
 }
