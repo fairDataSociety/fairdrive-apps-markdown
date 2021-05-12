@@ -14,14 +14,17 @@ export default function MainWrapper(props: Props) {
 
   const [file, setFile] = useState(null);
   const [data, setData] = useState(null);
+  const [fileContent, setFileContent] = useState(null);
   useEffect(() => {
     const file = new Blob([data], { type: "text/plain;charset=utf-8" });
     setFile(file);
   }, [data, setData]);
-
+  useEffect(() => {
+    setData(fileContent);
+  }, [fileContent, setFileContent]);
   return (
     <div className="Main">
-      <Navbar file={file}></Navbar>
+      <Navbar file={file} setFileContent={setFileContent}></Navbar>
       <Main setData={setData} data={data} />
     </div>
   );

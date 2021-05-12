@@ -22,7 +22,7 @@ export default function Main(props: Props) {
   };
   return (
     <div className={classes.Main}>
-      <TextEditor setData={props.setData} />
+      <TextEditor setData={props.setData} data={props.data} />
       <button onClick={downloadTxtFile}>Download</button>
     </div>
   );

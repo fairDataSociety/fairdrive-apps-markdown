@@ -13,6 +13,7 @@ import {
 } from "fairdrive-protocol";
 export interface Props {
   file: any;
+  setFileContent: any;
 }
 
 function Navbar(props: Props) {
@@ -115,7 +116,7 @@ function Navbar(props: Props) {
           <ListFilesComponent
             password={password}
             files={files}
-            setFile={setFile}
+            setFile={props.setFileContent}
           ></ListFilesComponent>
         </Fade>
       </Modal>
