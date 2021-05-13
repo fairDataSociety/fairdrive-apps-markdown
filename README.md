@@ -1,4 +1,4 @@
-# Markdown editor with Fair Connect
+# Markdown editor with FairDrive Protocol
 
 This is React app will edit text and save it to swarm using FairOS and Fairdrive Connect.
 
