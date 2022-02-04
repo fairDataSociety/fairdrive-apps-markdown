@@ -16,8 +16,3 @@ Run `npm link ../../fairdrive-protocol/app/node_modules/react` to avoid react ho
 
 inside app folder run `yarn start`
 
-for fairdrive login use credentials
-
-username: voltron
-
-password: test1234
